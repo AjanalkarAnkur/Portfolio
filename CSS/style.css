@@ -1,0 +1,422 @@
+@import 'utilities.css';
+@import url(utilities.css);
+
+.back-img {
+    background-image: url("./bckgrd.jpg");    
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1300px;
+    padding: 2rem 4rem;
+    margin:0 auto;
+}
+a {
+    text-decoration: none;
+}
+header .container .nav-bar .logo a{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 800;
+}
+header .container .nav-bar .logo span {
+    color:crimson;
+}
+header .container .nav-bar .menu a {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+header .container .nav-bar .menu a:hover {
+    color: crimson;
+}
+
+header .container .name {
+    color: white;
+    font-family: 'Lato',sans-serif;    
+    margin-top: 150px;
+    margin-left: auto;
+    font-weight: 900;
+}
+header .container .name span::before {
+    content: " ";
+    animation: animate infinite 5s;
+    padding-left: 10px;
+}
+@keyframes animate {
+    0% {
+        content: " ";
+    }
+    10% {
+        content: " ";
+    }
+    20% {
+        content: "D|";
+    }
+    30% {
+        content: "DE|";
+    }
+    40% {
+        content: "DEV|";
+    }
+    50% {
+        content: "DEVE|";
+    }
+    60% {
+        content: "DEVEL|";
+    }
+    70% {
+        content: "DEVELO|";
+    }
+    80% {
+        content: "DEVELOP|";
+    }
+    90% {
+        content: "DEVELOPE|";
+    }
+    100% {
+        content: "DEVELOPER";
+    }
+}
+#myanim h1 {
+    color: white;
+    animation: mymove 3s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {color: crimson;
+    }
+}
+header .container .name p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+header .container .name h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+header .container .name h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+header .container .name h2 span {
+    color: crimson;
+}
+header .container .hire-button button{
+    background-color: crimson;
+    color: white;
+    border:2px solid crimson;
+    border-color: crimson;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+header .container .hire-button .button-1:hover {
+    background-color: transparent;
+    color:crimson;    
+}
+section.about .about-heading h1{
+    font-size: 3rem;
+}
+section.about .about-heading p{
+    font-size: 1.5rem;
+    color: crimson;
+    margin-bottom: 3rem;
+}
+section.about .about-heading span{
+    text-decoration: line-through;
+    color: black;
+}
+section.about .divisions h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+section.about .divisions p{
+    font-size: 1.3rem;   
+    margin-bottom: 1rem; 
+}
+section.about .divisions .right{
+    margin-top: 5rem;
+    margin-left: -3rem;
+}
+section.about .divisions .right button.cv {
+    background-color: crimson;
+    color: white;
+    border:2px solid crimson;
+    border-color: crimson;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+section.about .divisions .right button.cv:hover {
+    background-color: transparent;
+    color:crimson;
+}
+section.about .divisions .right span{
+    color: crimson;
+}
+section.about .divisions .left {
+    margin-top: 3rem;
+    border: 10px solid transparent;
+    border-radius: 10px;
+}
+section.about {
+    margin : 6rem auto;
+}
+section.about .divisions .left img {
+    border-radius: 20px;
+}
+/*  */
+section.services {
+    background-color: black;
+    color: white;
+    padding: 6rem 0rem;
+}
+section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+}
+section.services .card-grid .card {
+    background-color: #222222;
+    padding: 2rem 2rem;
+}
+section.services .card-grid .card img{
+    padding: 10px 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+section.services .card-grid .card h2{
+    text-align: center;
+    font-family: 'Nunito',sans-serif;
+}
+section.services .card-grid .card p{
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+}
+section.services .card-grid .card:hover {
+    background-color:white;
+    color: black;
+}
+section.services .heading h1{
+    font-family: 'Lato',sans-serif;
+    font-size: 3rem;
+}
+section.services .heading p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5rem;
+}
+section.services .heading span {
+    text-decoration: line-through;
+}
+/*   */
+section.skills {
+    padding: 6rem 0;
+}
+section.skills .heading h1{
+    font-family: 'Lato',sans-serif;
+    font-size: 3rem;
+}
+section.skills .heading p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+}
+section.skills .heading span {
+    text-decoration: line-through;
+}
+section.skills .divisions .left h2{
+    font-family: 'Lato',sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+section.skills .divisions .left p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    margin: 2rem 4rem 0 0;
+}
+section.skills .divisions .left button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin:2rem 0;
+    background-color: crimson;
+    color: white;
+    border:2px solid crimson;
+    border-color: crimson;
+    text-align: center;
+}
+section.skills .divisions .left button:hover {
+    background-color: transparent;
+    color:crimson;
+}
+
+section.skills .divisions .right .box .skill{
+    text-align: right;
+    padding: 5px 0;
+    color: white;
+}
+section.skills .divisions .right p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}   
+section.skills .divisions .right .box .skill.html {
+    width: 90%; 
+    background-color: crimson;
+    font-family: 'Nunito',sans-serif;
+}
+section.skills .divisions .right .box .skill.css {
+    width: 80%; 
+    background-color: crimson;
+    font-family: 'Nunito',sans-serif;
+}
+section.skills .divisions .right .box .skill.js {
+    width: 25%; 
+    background-color: crimson;
+    font-family: 'Nunito',sans-serif;
+}
+section.skills .divisions .right .box .skill.php {
+    width: 10%; 
+    background-color: crimson;
+    font-family: 'Nunito',sans-serif;
+}
+section.skills .divisions .right .box {
+    margin-bottom: 1.5rem;
+}
+
+section.team {
+    background-color: black;
+    color: white;
+    padding: 4rem 0rem;
+}
+section.team .heading h1{
+    font-family: 'Lato',sans-serif;
+    font-size: 3rem;
+}
+section.team .heading p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+section.team .heading span {
+    text-decoration: line-through;
+}
+section.team .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 3rem;
+}
+section.team .card-grid .card {
+    background-color: #222222;
+    padding: 2rem 2rem;
+}
+section.team .card-grid .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px ;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+section.team .card-grid .card:hover {
+    background-color: crimson; 
+}
+section.team .card-grid .card:hover img {
+    border: 5px solid white;    
+} 
+section.team .card-grid .card h2 {
+    font-family: 'Lato',sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+section.team .card-grid .card p {
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+section.contact .head {
+    font-family: 'Lato',sans-serif;
+}
+section.contact .head  h1{
+    font-size: 2rem;    
+}
+section.contact .head p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+section.contact .head span {
+    text-decoration: line-through;
+}
+section.contact .divisions .left {
+    padding: 2rem 5rem;
+}
+section.contact .divisions .right {
+    padding: 2rem 3rem;
+    font-family: 'Nunito',sans-serif;
+    font-size: 1rem;
+}
+section.contact .divisions .left h2 {
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+section.contact .divisions .left p {
+    font-family: 'Nunito',sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section.contact .divisions .left a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-align: top;
+}
+section.contact .divisions .right h2 {
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+section.contact .divisions .right label {
+    font-weight: 500;
+}
+input[type=text],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.copyright {
+    background-color: black;
+}
+.copyright .text {
+    color: white;
+    font-size: 1.2rem;
+}
+.copyright .text a {
+    color: crimson;
+}
